@@ -1,0 +1,220 @@
+@import url(./style.css);
+
+/* Região principal */
+#ada-documentacao-main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+/* Menu letaral */
+#ada-menu-lateral {
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 2rem;
+}
+
+img.logo-cefor-topo {
+    max-width: 15rem;
+    margin: 2rem 0;
+}
+
+
+.aside-logo-cefor {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+span.logo-titulo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: var(--cor-texto-verde-escuro1);
+}
+
+span.logo-subtitulo {
+    font-size: 1rem;
+    color: var(--cor-texto-verde-escuro1);
+}
+
+#ada-menu-lateral a {
+    color: var(--cor-texto-verde-escuro1);
+    display: block;
+    font-family: 'gotham-medium';
+}
+
+.aside-dropdown {
+    display: block;
+    margin-top: 10px;
+}
+
+.aside-dropdown-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.aside-dropdown-content a {
+    color: var(--cor-texto-azul-medio1);
+    display: block;
+}
+
+#ada-menu-lateral a:hover,
+.aside-dropdown:hover .aside-dropdown-btn {
+    color: var(--cor-texto-azul-medio1);
+    font-family: 'gotham-black';
+}
+
+.aside-dropdown:hover .aside-dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    #ada-menu-lateral {
+        width: 100%;
+    }
+
+    .aside-dropdown-content {
+        padding-left: 10px;
+    }
+}
+
+/* Conteúdo principal */
+.ada-conteudo-topo {
+    font-family: 'gotham-book';
+    margin: 1rem 1rem 2rem 1rem;
+    font-size: 1.1rem;
+}
+
+.ada-conteudo-3-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.ada-conteudo-card {
+    background-color: var(--cor-bg-verde-claro);
+    border: 1px solid var(--cor-bg-azul-claro);
+    min-height: 20rem;
+    border-radius: var(--borda-redonda-pequena);
+    padding: 1rem;
+    background-image: url(../img/bg-marcas/Folhagem\ para\ nome\ de\ seção.png);
+    background-repeat: no-repeat;
+    background-size: 4rem;
+    background-position-x: 90%;
+    background-position-y: 90%;
+    color: var(--cor-texto-azul-escuro2)
+}
+
+.ada-conteudo-h3 {
+    text-align: left;
+}
+
+.ada-conteudo-h3 h3 {
+    
+    margin-bottom: 1.5rem;
+}
+
+.ada-capitulo-conteudo {
+    font-family: 'gotham-book';
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+.ada-capitulo-conteudo p  {
+    margin: 1rem 0;
+}
+
+.ada-capitulo-conteudo ul, .ada-capitulo-conteudo li {
+    margin: 0.5rem 1rem;
+}
+
+.ada-capitulo-2-cols-esq {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.ada-capitulo-2-cols-dir {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.ada-capitulo-img-dir, .ada-capitulo-img-esq {
+    max-width: 30rem;
+    margin: auto 3rem;
+}
+
+.ada-capitulo-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ada-conteudo-texto-destaque {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: 'gotham-medium-italic';
+}
+
+span.pilar-titulo {
+    font-family: 'gotham-bold';
+    color: var(--cor-texto-verde-destaque);
+    font-size: 1.5rem;
+}
+
+.img-aguarde {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--cor-bg-azul-claro), var(--cor-bg-verde-camara));
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-aguarde p {
+    font-size: 3rem;
+    color: var(--cor-texto-branco);
+    font-family: 'gotham-bold';
+}
+
+.caixa-citacao {
+   max-width: 90%;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to right, var(--cor-bg-azul-claro), var(--cor-bg-verde-camara));
+}
+
+.caixa-citacao {
+    font-size: 1.15rem;
+    color: var(--cor-texto-branco);
+    font-family: 'gotham-light';
+}
+
+.ada-capitulo-conteudo-marcador li {
+    list-style: inside;
+}
+
+.ada-capitulo-conteudo a {
+    color: var(--cor-texto-verde-medio1img-aguarde);
+    font-family: 'gotham-medium';
+}
+
+.ada-conteudo-observacao {
+    font-family: 'gotham-book';
+}
+
+.paleta-cores-cefor {
+    max-width: 90%;
+}
+
+/* Footer */
+.ada-rodape {
+    text-align: center;
+}
+
+

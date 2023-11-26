@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id="topo-pagina">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ada - Identidade - Manual</title>    <link rel="website icon" type="png" href="../../static/img/cefor/cefor-favicon.png">
+
+    <!-- Folhas de Estilo -->
+    <link rel="stylesheet" href="../../static/css/style.css">
+
+</head>
+<body>
+    <!-- Ir para o topo da página -->
+    <div class="topo-pagina">
+        <button type="button"><a href="#topo-pagina">Ir para o topo</a></button>
+    </div>
+
+    <!-- Topo Câmara -->
+    <header id="camara-topo"></header>
+
+    <main id="ada-documentacao-main">
+        <aside id="ada-menu-lateral"></aside>
+
+        <section id="ada-conteudo-principal">
+            <h2 class="titulo-pagina-h2">Ambiente Digital de Aprendizagem da Câmara dos Deputados</h2>
+            <div class="ada-conteudo-topo">
+                <p>Esse espaço tem o objetivo de disponibilizar de maneira compartilhada a documentação sobre o Ambiente Digital e Aprendizagem da Escola da Câmara dos Deputados e seus sistemas.</p>
+                <p>Leia, interaja, acrescente, crie, proponha, corrija, ou seja, faça o melhor uso que entender desse espaço!</p>
+            </div>
+            <div class="ada-conteudo-3-cards">
+                <div class="ada-conteudo-card">
+                    <a href="" class="ada-conteudo-h3">
+                        <h3>EaD na Câmara dos Deputados</h3>
+                        <ol>
+                            <li><a href="../ada/ead-historia.html">História da EaD no Cefor</a></li>
+                            <li><a href="../ada/ada-principios.html">Princípios do ADA</a></li>
+                            <li><a href="../ada/ada-sobre.html">Sobre o ADA</a></li>
+                            <li><a href="../ada/ada-equipe.html">Equipe responsável</a></li>
+                        </ol>
+                    </a>
+                </div>
+                <div class="ada-conteudo-card">
+                    <a href="" class="ada-conteudo-h3">
+                        <h3>Identidade Visual do Cefor</h3>
+                        <ol>
+                            <li><a href="../identidade-visual/identidade-manual.html">Manual de Identidade Visual</a></li>
+                            <li><a href="../identidade-visual/identidade-fonte.html">Fonte</a></li>
+                            <li><a href="../identidade-visual/identidade-cores.html">Cores</a></li>
+                            <li><a href="../identidade-visual/identidade-formas.html">Formas e elementos</a></li>
+                        </ol>
+                    </a>
+                </div>
+                <div class="ada-conteudo-card">
+                    <a href="" class="ada-conteudo-h3">
+                        <h3>Educação a Distância e Moodle</h3>
+                        <ol>
+                            <li><a href="../moodle/ead-moodle.html">Moodle ?!?</a></li>
+                            <li><a href="#">Moodle 4</a></li>
+                            <li><a href="#">Seção 3.3</a></li>
+                        </ol>
+                    </a>
+                </div>
+                <div class="ada-conteudo-card">
+                    <a href="" class="ada-conteudo-h3">
+                        <h3>Seção 4</h3>
+                        <ol>
+                            <li><a href="#">Seção 4.1</a></li>
+                            <li><a href="#">Seção 4.2</a></li>
+                            <li><a href="#">Seção 4.3</a></li>
+                        </ol>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Câmara rodapé -->
+    <footer id="camara-rodape"></footer>
+
+    <script src="../../static/js/script.js"></script>
+
+    <!-- Importação dos módulos -->
+    <script>
+        var modules = [
+            { moduleId: "camara-topo", url: "../modulos/camara-cabecalho.html" },
+            { moduleId: "ada-menu-lateral", url: "../modulos/ada-menu-lateral.html" },
+        ];
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Função para carregar os módulos com as informações do array "modules"
+            loadModules(modules);
+        });
+    </script>
+    
+</body>
+</html>

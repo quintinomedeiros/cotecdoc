@@ -1,0 +1,269 @@
+/*
+Theme Name: cotecdoc
+Author: Cotec - Cefor
+Autor URL: https://quitinomedeiros.com.br
+Version: 1.0
+*/
+
+/* Documentação - Ead - Cefor - Câmara dos Deputados */
+
+/* Variáveis gerais */
+/* Definição de Cores */
+:root {
+    --cor-bg-verde-escuro: #0a312c; /* Substitua pela sua cor primária */
+    --cor-bg-verde-camara: #146646;
+    --cor-bg-verde-claro: #ebf3ec;
+    --cor-bg-verde-destaque: #52cd4f;
+    --cor-bg-azul-medio: #51babb;
+    --cor-bg-azul-claro: #c3d6df; /* Substitua pela sua cor secundária */
+    --cor-bg-cinza-claro: #e8e8e7;
+    
+    --cor-texto-verde-escuro1: #22332e;
+    --cor-texto-verde-escuro2: #3d6649;
+    --cor-texto-verde-medio1: #567c66;
+    --cor-texto-verde-medio2: #68a840;
+    --cor-texto-verde-claro1: #adcd9f;
+    --cor-texto-verde-claro2: #dbe8d7;
+    --cor-texto-verde-destaque: #52cd4f;
+    --cor-texto-azul-escuro: #c3d6df;
+    --cor-texto-azul-escuro2: #79bdba;
+    --cor-texto-azul-medio1: #aad2d7;
+    --cor-texto-azul-medio2: #cfe5e5;
+    --cor-texto-azul-claro1: #aad2d7;
+    --cor-texto-azul-claro2: #cfe5e5;
+    --cor-texto-cinza-medio: #e9eee6;
+    --cor-texto-cinza-claro: #e8e8e7;
+    --cor-texto-branco: #ffffff;
+
+    --link-primario: #146646;
+    --link-hover: #0a312c;
+
+    --borda-fina: 1px solid;
+
+    --borda-redonda-pequena: 1rem;
+    --borda-redonda-media: 2rem;
+    --borda-redonda-grande: 3rem;
+
+    --border-radius: 0.5rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Zera margens e paddings para elementos comuns */
+body,
+h1, h2, h3, h4, h5, h6,
+p, figure, blockquote, dl, dd, ol, ul,
+fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Evita quebras estranhas de linhas no texto */
+body {
+    font-family: 'gotham-medium', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto-verde-escuro1);
+}
+
+
+h1, h2, h3 {
+    font-family: 'gotham-bold';
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1.5rem 0;
+    font-family: 'gotham-bold';
+    text-transform: uppercase;
+}
+
+/* Remove marcadores de lista */
+ul {
+    list-style: none;
+    margin-left: 0.5rem;
+}
+
+ol {
+    margin-left: 2rem;
+    color: var(--link-primario);
+}
+
+ol > li:hover {
+    color: var(--link-hover);
+    cursor: pointer;
+}
+
+/* Formatação padrão para links */
+a {
+    color: var(--link-primario);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'gotham-book';
+}
+
+a:hover {
+    color: var(--link-hover);
+    cursor: pointer;
+}
+  
+a:visited {
+    color: var(--link-visitado);
+}
+
+a:active {
+    color: var(--link-ativo);
+}
+
+/* Botão - Subir para o topo da página */
+.topo-pagina button {
+    background-color: var(--cor-bg-verde-destaque);
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    border: 1px solid var(--cor-bg-verde-destaque);
+    border-radius: var(--border-radius);
+    padding: 0.25rem 0.75rem;
+    font-size: 1rem;
+    color: var(--cor-texto-branco);
+}
+
+.topo-pagina button:hover {
+    cursor: pointer;
+    background-color: var(--cor-branca);
+    color: var(--cor-bg-verde-destaque);
+    border-color: var(--cor-bg-verde-destaque);
+}
+
+.topo-pagina button a:hover {
+    color: var(--cor-bg-verde-destaque);
+    font-weight: 700;
+}
+
+/* Família de Fontes - Gotham */
+@font-face {
+    font-family: 'gotham-light';
+    src: url('./cefor-fontes/Gotham-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-light-italic';
+    src: url('./cefor-fontes/Gotham-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-medium';
+    src: url('./cefor-fontes/Gotham-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-medium-italic';
+    src: url('./cefor-fontes/Gotham-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-thin';
+    src: url('./cefor-fontes/Gotham-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-thin-italic';
+    src: url('./cefor-fontes/Gotham-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-ultra';
+    src: url('./cefor-fontes/Gotham-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-ultra-italic';
+    src: url('./cefor-fontes/Gotham-UltraItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-xlight';
+    src: url('./cefor-fontes/Gotham-XLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-xlight-italic';
+    src: url('./cefor-fontes/Gotham-XLightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-black';
+    src: url('./cefor-fontes/Gotham-Black.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: 'gotham-black-italic';
+    src: url('./cefor-fontes/Gotham-BlackItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-bold';
+    src: url('./cefor-fontes/Gotham-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-bold-italic';
+    src: url('./cefor-fontes/Gotham-BoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
+@font-face {
+    font-family: 'gotham-book';
+    src: url('./cefor-fontes/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'gotham-book-italic';
+    src: url('./cefor-fontes/Gotham-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+  
